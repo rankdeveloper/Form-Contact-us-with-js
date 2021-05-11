@@ -1,0 +1,161 @@
+
+<!--Made by Rankush 
+Version 1.0-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        
+        <style>
+body {
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+    background-color:#34495e;
+}
+
+
+.form h2{
+    color:white;
+    font-weight:500;
+}
+
+.form{
+    width:300px;
+    top:50%;
+    left:50%;
+    background-color:#191919;
+    position:absolute;
+    text-align:center;
+    padding:40px;
+    transform:translate(-50% , -50%);
+}
+
+.form input[type="text"] , .form input[type="email"] ,
+ .form input[type="password"]{
+    border:none;
+    background:none;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    border:2px solid #3498db;
+    padding:14px 10px;
+    width:200px;
+    border-radius:24px;
+    outline:none;
+    transition:0.25s;
+    color:white;
+}
+
+
+.form input[type="text"]:focus , .form input[type="email"]:focus , .form input[type="password"]:focus{
+    width:280px;
+}
+
+
+
+.form input[type="submit"]{
+      border:none;
+    background:none;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    border:2px solid #3498db;
+    padding:14px 40px;
+   /* width:200px;*/
+    border-radius:24px;
+    outline:none;
+    transition:0.25s;
+    color:white;
+}
+
+
+.form input[type="submit"]:hover{
+    background-color:#3498db;
+}
+
+
+
+.form textarea{
+     border:none;
+    background:none;
+    display:block;
+    margin:20px auto;
+    text-align:center;
+    border:2px solid #3498db;
+    padding:30px 15px;
+    width:200px;
+    border-radius:30px;
+    outline:none;
+    transition:0.25s;
+    color:white;
+}
+
+.form textarea:focus{
+    width:280px;
+}
+
+/*Made by Rankush*/
+        </style>
+    </head>
+    <body>
+        
+        <form class="form">
+            <h2>CONTACT US</h2>
+            
+            <input type="text" placeholder="Username"  id="uname" required>
+            
+            <input type="email" placeholder="Email Id" id="email" required>
+           
+            
+            <input type="password" placeholder="Password" id="pass" required>
+            
+             <textarea placeholder="Enter Message" id="text" required></textarea>
+            
+            <input type="submit" value="Login" onclick="check()">
+            
+        </form>
+        
+        
+        <script>
+alert("Please support my work by like and \nand Follow me for motivation😅😄..");
+
+function check(){
+    var uname=document.getElementById("uname");
+    var email=document.getElementById("email");
+    
+    var pass=document.getElementById("pass");
+
+
+    var text=document.getElementById("text");
+    
+    if(uname.value=='' || uname==null){
+      uname.style.borderColor="red"; 
+    }
+    
+   
+    
+    if(email.value=='' || email==null){
+        email.style.borderColor="red";
+    }
+    
+    
+    if(pass.value=='' || pass==null){
+        pass.style.borderColor="red";
+    }
+    
+    
+    if(text.value=='' || text==null){
+        text.style.borderColor="red";
+    }
+    
+}
+        </script>
+        
+        
+    </body>
+    
+    
+    
+</html>
